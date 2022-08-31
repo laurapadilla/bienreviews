@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   resources :reviews
 
-  root "reviews#index"
+  root 'reviews#index'
 end

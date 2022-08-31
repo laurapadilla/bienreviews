@@ -3,6 +3,6 @@ class ReviewsController < ApplicationController
     # this is our list page for our reviewss
     @number = rand(100)
 
-    @reviews = ["Baos", "Sarabeth's", "Smac's", "Manhattan Diner"]
+    @reviews = ["Baos", "The Smile", "Chipotle", "Manhattan Diner"]
   end
 end

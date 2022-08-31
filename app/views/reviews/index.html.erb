@@ -1,12 +1,8 @@
 <h1>Whereas recognition of the inherent dignity</h1>
 <h2>The best restaurant reviews in the world!</h2>
-<p>The random number is <%= @number %></p>
 
-
-<ul class="reviews">
-  <%= @reviews.each do |review| %>
- <li></li>
-  <% end %>
-</ul>
-
-
+<%= @reviews.each do |review| %>
+<li class="review">
+  <%= review %>
+</li>
+<%end%>
