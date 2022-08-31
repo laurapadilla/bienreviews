@@ -1,0 +1,43 @@
+// Base Colors
+$green: #3bc8aa;
+$orange: #ff551a;
+$red: #cf3500;
+$black: #1e1e1e;
+$gray: #999;
+$yellow: #ffeccf;
+$white: #fff;
+
+//  Typography
+$sans: 'Karla';
+$serif: 'Lora';
+$titleFont: $serif;
+$bodyFont: $sans;
+$text-color: $black;
+$text-color-inverted: $white;
+$text-color-accent: $orange;
+$text-color-light: $gray;
+$footer-text: $gray;
+$link-text: $orange;
+$letter-spacing-sm: -0.1px;
+$letter-spacing-default: normal;
+$line-height: 1.5;
+
+$font-size-xs: 0.875rem;
+$font-size-sm: 1rem;
+$font-size: 1.125rem;
+$font-size-md: 1.25rem;
+$font-size-lg: 1.5rem;
+$font-size-xl: 2rem;
+$font-size-xl2: 2.5rem;
+
+//  Elements
+$header-bg-color: $yellow;
+$filter-chip-border: $green;
+$border-color: lighten($black, 75%);
+
+// States
+$danger: $red;
+
+// Utilities
+$transitionAll: all 0.2s ease-in-out;
+$accent: $orange;

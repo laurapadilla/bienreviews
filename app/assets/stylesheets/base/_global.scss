@@ -1,0 +1,74 @@
+@import 'abstracts';
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Lora:wght@400;600&display=swap');
+
+body {
+  color: $text-color;
+  font-family: $bodyFont;
+  letter-spacing: $letter-spacing-sm;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+button {
+  @include btn;
+}
+
+a {
+  color: $link-text;
+  text-decoration: none;
+  transition: $transitionAll;
+
+  &:hover {
+    color: darken($link-text, 20%);
+  }
+}
+
+header, main, footer {
+  padding: 2rem;
+}
+
+header {
+  @include flex;
+  background: $header-bg-color;
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+
+  img {
+    width: 80px;
+    vertical-align: initial;
+  }
+
+  nav {
+    font-size: $font-size-lg;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+main {
+  margin-top: 7rem;
+  min-height: 100vh;
+  margin-bottom: 8rem;
+}
+
+footer {
+  pointer-events: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: $white;
+  color: $footer-text;
+}
+
+textarea {
+  min-height: 400px;
+}
