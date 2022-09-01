@@ -1,0 +1,23 @@
+@import 'abstracts';
+
+.filters {
+  border-bottom: 3px solid $yellow;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding-bottom: 2rem;
+
+  a {
+    @include filter-chip;
+  }
+
+  input {
+    outline: none;
+    &:focus,
+    &:active {
+      border: 1px solid $accent;
+    }
+  }
+}

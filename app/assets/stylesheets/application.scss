@@ -17,3 +17,11 @@
  @import 'base/reset';
  @import 'base/global';
  @import 'base/typography';
+
+ @import 'components/buttons';
+ @import 'components/filters';
+ @import 'components/comment';
+ @import 'components/inputs';
+
+ @import 'pages/home';
+ @import 'pages/reviews';

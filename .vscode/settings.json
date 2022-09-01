@@ -4,5 +4,8 @@
   "editor.formatOnType": true,
   "[html]": {
     "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "[ruby]": {
+    "editor.defaultFormatter": "jnbt.vscode-rufo"
   }
 }

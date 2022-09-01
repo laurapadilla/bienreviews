@@ -1,8 +1,7 @@
-<h1>Whereas recognition of the inherent dignity</h1>
-<h2>The best restaurant reviews in the world!</h2>
-
-<%= @reviews.each do |review| %>
-<li class="review">
-  <%= review %>
-</li>
-<%end%>
+<ul>
+  <% @reviews.each do |review| %>
+    <li class="review">
+      <%= link_to review.title, review_path(review) %>
+    </li>
+  <%end%>
+</ul>

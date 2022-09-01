@@ -1,0 +1,25 @@
+@import 'abstracts';
+
+label {
+  display: block;
+}
+
+input,
+textarea {
+  font-size: $font-size-xs;
+  min-width: 400px;
+  border: 1px solid $border-color;
+  padding: 7px 10px;
+}
+
+input[type='submit'] {
+  background: $accent;
+  color: $white;
+  border-color: $accent;
+  transition: $transitionAll;
+  cursor: pointer;
+
+  &:hover {
+    background: darken($accent, 10%);
+  }
+}
