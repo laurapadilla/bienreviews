@@ -2,12 +2,20 @@
 <h1 class="page-title">
   <%= @review.title %>
 </h1>
+<h2>
+  <%= @review.restaurant %>
+</h2>
 <p class="score">
   <%= @review.score %> / 10
 </p>
 <div class="body">
   <%= simple_format @review.body %>
 </div>
+<% if @review.ambiance.present? %>
+  <p class="ambiance">
+    Ambiance:  <%= @review.ambiance %>
+  </p>
+<% end %>
 <section class="actions">
   <%= link_to "Edit review", edit_review_path(@review) %>
   <%= link_to "Delete review", review_path(@review), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}  %>

@@ -13,12 +13,20 @@
     <%= f.text_field :title %>
   </div>
   <div class='input-wrapper'>
+    <%= f.label :restaurant %>
+    <%= f.text_field :restaurant %>
+  </div>
+  <div class='input-wrapper'>
     <%= f.label :body %>
     <%= f.text_area :body %>
   </div>
   <div class='input-wrapper'>
     <%= f.label :score %>
     <%= f.number_field :score %>
+  </div>
+  <div class='input-wrapper'>
+    <%= f.label :ambiance %>
+    <%= f.text_field :ambiance %>
   </div>
   <%= f.submit "Save review", class: 'btn-primary' %>
 <% end %>

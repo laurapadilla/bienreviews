@@ -6,8 +6,13 @@
   justify-content: space-between;
 }
 
+h2 {
+  font-size: $font-size-lg;
+}
+
 .page-title {
   margin-bottom: 1rem;
+  font-variation-settings: 'ital' 1;
 }
 
 form {
