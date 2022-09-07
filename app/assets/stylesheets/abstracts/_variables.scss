@@ -9,6 +9,7 @@ $lilac: #c7a2f9;
 $gray: #999;
 $cream: #faf0e6;
 $white: #fff;
+$sky: #f0f8ff;
 
 // Utilities
 $transitionAll: all 0.2s ease-in-out;
@@ -38,7 +39,7 @@ $font-size-xl: 2rem;
 $font-size-xl2: 2.5rem;
 
 //  Elements
-$header-bg-color: $cream;
+$header-bg-color: $sky;
 $filter-chip-border: $green;
 $border-color: lighten($black, 75%);
 $btn-primary: $accent;
