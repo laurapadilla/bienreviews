@@ -7,12 +7,15 @@
 }
 
 @mixin btn {
-  font-size: $font-size;
-  font-family: $bodyFont;
   background: transparent;
   border: none;
-  padding: 1rem;
+  border-radius: 5px;
   cursor: pointer;
+  color: inherit;
+  font-size: $font-size;
+  font-family: $bodyFont;
+  padding: 1rem;
+  transition: $transitionAll;
 }
 
 @mixin filter-chip {
@@ -23,7 +26,8 @@
   padding: 0.5rem 1rem;
   transition: $transitionAll;
 
-  &:hover, &.active {
+  &:hover,
+  &.active {
     background: $green;
     color: $text-color-inverted;
   }

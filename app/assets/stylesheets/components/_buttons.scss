@@ -1,1 +1,14 @@
 @import 'abstracts';
+
+.btn-primary {
+  @include btn;
+  background: $btn-primary;
+  color: $btn-primary-text;
+  &:hover {
+    background: darken($btn-primary, 10%);
+  }
+
+  a {
+    color: $btn-primary-text;
+  }
+}

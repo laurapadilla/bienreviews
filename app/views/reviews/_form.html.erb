@@ -1,15 +1,15 @@
 <%= form_for @review do |f| %>
-  <div>
+  <div class='input-wrapper'>
     <%= f.label :title %>
     <%= f.text_field :title %>
   </div>
-  <div>
+  <div class='input-wrapper'>
     <%= f.label :body %>
     <%= f.text_area :body %>
   </div>
-  <div>
+  <div class='input-wrapper'>
     <%= f.label :score %>
     <%= f.number_field :score %>
   </div>
-  <%= f.submit "Update review" %>
+  <%= f.submit "Save review", class: 'btn-primary' %>
 <% end %>

@@ -1,5 +1,5 @@
 // Base Colors
-$green: #3cb371;
+$green: #15a153;
 $red-light: #e95c4e;
 $red: #cf3500;
 $blue: #7ba1f8;
@@ -41,6 +41,8 @@ $font-size-xl2: 2.5rem;
 $header-bg-color: $cream;
 $filter-chip-border: $green;
 $border-color: lighten($black, 75%);
+$btn-primary: $accent;
+$btn-primary-text: $text-color-inverted;
 
 // States
 $danger: $red;
