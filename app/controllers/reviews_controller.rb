@@ -13,14 +13,18 @@ class ReviewsController < ApplicationController
   end
 
   def create
-    # take info from form and add it to database
+    # take info from form and add it to model
     @review = Review.new(form_params)
 
-    # save this to the database
-    @review.save
-
-    # redirect back to home page
-    redirect_to root_path
+    # check if the model can be saved
+    # if it can be saved, go to homepage
+    # but if it isnt', then show the new review forms
+    if @review.save
+      redirect_to root_path
+    else
+      # show the new.html.erb file
+      render 'new', status: :unprocessable_entity
+    end
   end
 
   def show
@@ -50,10 +54,12 @@ class ReviewsController < ApplicationController
     @review = Review.find(params[:id])
 
     # update with the new info from form
-    @review.update(form_params)
-
-    # redirect back to review
-    redirect_to review_path, status: :see_other
+    if @review.update(form_params)
+      # redirect back to review
+      redirect_to review_path, status: :see_other
+    else
+      render 'edit', status: :unprocessable_entity
+    end
   end
 
   def form_params
