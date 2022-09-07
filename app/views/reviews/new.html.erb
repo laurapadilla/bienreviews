@@ -1,21 +1,2 @@
 <h1>Add your new review</h1>
-
-<%= form_for @review do |f| %>
-<div>
-  <%= f.label :title %>
-  <%= f.text_field :title %>
-</div>
-
-<div>
-  <%= f.label :body %>
-  <%= f.text_area :body %>
-</div>
-
-<div>
-  <%= f.label :score %>
-  <%= f.number_field :score %>
-</div>
-
-<%= f.submit "Save review" %>
-
-<% end %>
+<%=render "form" %>

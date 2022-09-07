@@ -1,11 +1,18 @@
 // Base Colors
-$green: #3bc8aa;
-$orange: #ff551a;
+$green: #3cb371;
+$red-light: #e95c4e;
 $red: #cf3500;
+$blue: #7ba1f8;
 $black: #1e1e1e;
+$mustard: #f7d74e;
+$lilac: #c7a2f9;
 $gray: #999;
-$yellow: #ffeccf;
+$cream: #faf0e6;
 $white: #fff;
+
+// Utilities
+$transitionAll: all 0.2s ease-in-out;
+$accent: $green;
 
 //  Typography
 $sans: 'Karla';
@@ -14,10 +21,10 @@ $titleFont: $serif;
 $bodyFont: $sans;
 $text-color: $black;
 $text-color-inverted: $white;
-$text-color-accent: $orange;
+$text-color-accent: $accent;
 $text-color-light: $gray;
 $footer-text: $gray;
-$link-text: $orange;
+$link-text: $accent;
 $letter-spacing-sm: -0.1px;
 $letter-spacing-default: normal;
 $line-height: 1.5;
@@ -31,13 +38,9 @@ $font-size-xl: 2rem;
 $font-size-xl2: 2.5rem;
 
 //  Elements
-$header-bg-color: $yellow;
+$header-bg-color: $cream;
 $filter-chip-border: $green;
 $border-color: lighten($black, 75%);
 
 // States
 $danger: $red;
-
-// Utilities
-$transitionAll: all 0.2s ease-in-out;
-$accent: $orange;

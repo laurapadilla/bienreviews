@@ -1,33 +1,31 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <title>Bien</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <%= csrf_meta_tags %>
-  <%= csp_meta_tag %>
-
-  <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-  <%= javascript_importmap_tags %>
-</head>
-
-<body>
-  <header>
-    <div>
-      <h1>
-        <%= link_to "Bien Reviews", root_path %>
-      </h1>
-    </div>
-    <nav>
-      <%= link_to 'Add a review', new_review_path %>
-    </nav>
-  </header>
-  <main>
-    <%= yield %>
-  </main>
-  <footer>
-    Copyright 2022 Bien Reviews
-  </footer>
-</body>
-
+  <head>
+    <title>Bien</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>
+          <%= link_to root_path do %>
+            <%= image_tag "bien-logo.svg" %>
+          <% end %>
+        </h1>
+      </nav>
+      <nav>
+        <%= link_to 'Add a review', new_review_path %>
+      </nav>
+    </header>
+    <main>
+      <%= yield %>
+    </main>
+    <footer>
+      Copyright 2022 Bien Reviews
+    </footer>
+  </body>
 </html>

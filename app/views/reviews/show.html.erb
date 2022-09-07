@@ -7,3 +7,7 @@
 <div class="body">
   <%= simple_format @review.body %>
 </div>
+<section class="actions">
+  <%= link_to "Edit review", edit_review_path(@review) %>
+  <%= link_to "Delete review", review_path(@review), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}  %>
+</section>

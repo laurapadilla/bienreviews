@@ -29,18 +29,19 @@ a {
   }
 }
 
-header, main, footer {
+header,
+main,
+footer {
   padding: 2rem;
 }
 
 header {
   @include flex;
   background: $header-bg-color;
-  position:fixed;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-
 
   img {
     width: 80px;

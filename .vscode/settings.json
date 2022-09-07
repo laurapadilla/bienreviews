@@ -1,7 +1,7 @@
 {
   "editor.defaultFormatter": null,
-  "editor.formatOnSave": false,
-  "editor.formatOnType": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": false,
   "[html]": {
     "editor.defaultFormatter": "HookyQR.beautify"
   },
