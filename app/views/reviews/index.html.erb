@@ -1,19 +1,19 @@
 <% content_for :page_title, "Home" %>
 <nav class="filters">
   <div>
-    <%= link_to "All Restaurants", root_path %>
+    <%= active_link_to "All Restaurants", root_path, active: { price: nil, cuisine: nil, location: nil } %>
   </div>
   <div>
-    <%= link_to "$", root_path(price: 1, cuisine: @cuisine, location: @location) %>
-    <%= link_to "$$", root_path(price: 2, cuisine: @cuisine, location: @location) %>
-    <%= link_to "$$$", root_path(price: 3, cuisine: @cuisine, location: @location) %>
-    <%= link_to "$$$$", root_path(price: 4, cuisine: @cuisine, location: @location) %>
+    <%= active_link_to "$", root_path(price: 1, cuisine: @cuisine, location: @location), active: { price: 1 } %>
+    <%= active_link_to "$$", root_path(price: 2, cuisine: @cuisine, location: @location), active: { price: 2 } %>
+    <%= active_link_to "$$$", root_path(price: 3, cuisine: @cuisine, location: @location), active: { price: 3 } %>
+    <%= active_link_to "$$$$", root_path(price: 4, cuisine: @cuisine, location: @location), active: { price: 4 } %>
   </div>
   <div>
-    <%= link_to "Italian", root_path(cuisine: "Italian", price: @price, location: @location) %>
-    <%= link_to "American", root_path(cuisine: "American", price: @price, location: @location) %>
-    <%= link_to "Puertorrican", root_path(cuisine: "Puertorrican", price: @price, location: @location) %>
-    <%= link_to "Spanish", root_path(cuisine: "Spanish", price: @price, location: @location) %>
+    <%= active_link_to "Italian", root_path(cuisine: "Italian", price: @price, location: @location), active: { cuisine: "Italian" } %>
+    <%= active_link_to "American", root_path(cuisine: "American", price: @price, location: @location), active: { cuisine: "American" } %>
+    <%= active_link_to "Puertorrican", root_path(cuisine: "Puertorrican", price: @price, location: @location), active: { cuisine: "Puertorrican"  } %>
+    <%= active_link_to "Spanish", root_path(cuisine: "Spanish", price: @price, location: @location), active: { cuisine: "Spanish" } %>
   </div>
   <form action="/" class="search">
     <input type="text" name="location" placeholder="Search location" value="<%= @location %>">

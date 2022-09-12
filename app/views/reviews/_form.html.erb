@@ -1,4 +1,4 @@
-<%= form_for @review do |f| %>
+<%= simple_form_for @review do |f| %>
   <% if @review.errors.any? %>
     <div class="errors">
       <% @review.errors.full_messages.each do |message| %>
@@ -8,37 +8,13 @@
       <% end %>
     </div>
   <% end %>
-  <div class='input-wrapper'>
-    <%= f.label :title %>
-    <%= f.text_field :title %>
-  </div>
-  <div class='input-wrapper'>
-    <%= f.label :restaurant %>
-    <%= f.text_field :restaurant %>
-  </div>
-  <div class='input-wrapper'>
-    <%= f.label :address %>
-    <%= f.text_field :address %>
-  </div>
-  <div class='input-wrapper'>
-    <%= f.label :cuisine %>
-    <%= f.text_field :cuisine %>
-  </div>
-  <div class='input-wrapper'>
-    <%= f.label :body %>
-    <%= f.text_area :body %>
-  </div>
-  <div class='input-wrapper'>
-    <%= f.label :score %>
-    <%= f.number_field :score %>
-  </div>
-  <div class='input-wrapper'>
-    <%= f.label :price %>
-    <%= f.number_field :price %>
-  </div>
-  <div class='input-wrapper'>
-    <%= f.label :ambiance %>
-    <%= f.text_field :ambiance %>
-  </div>
+  <%= f.input :title %>
+  <%= f.input :restaurant %>
+  <%= f.input :address %>
+  <%= f.input :cuisine %>
+  <%= f.input :body %>
+  <%= f.input :score %>
+  <%= f.input :price %>
+  <%= f.input :ambiance %>
   <%= f.submit "Save review", class: 'btn-primary' %>
 <% end %>

@@ -54,6 +54,12 @@ gem 'sassc-rails'
 
 gem 'geocoder'
 
+# make our forms nice and easy
+gem 'simple_form'
+
+# make our filters active
+gem 'active_link_to'
+
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
