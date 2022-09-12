@@ -36,6 +36,7 @@ gem 'rufo'
 gem 'rubocop', '~> 1.36', require: false
 
 gem 'rubocop-rails', require: false
+
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 
@@ -50,6 +51,8 @@ gem 'bootsnap', require: false
 
 # Use Sass to process CSS
 gem 'sassc-rails'
+
+gem 'geocoder'
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
