@@ -2,6 +2,9 @@
 
 # this is my model file for the review model. This is where you add validations and model-specific info
 class Review < ApplicationRecord
+  # add an association that has a 1-to-many relationship
+  has_many :comments
+
   geocoded_by :address
   after_validation :geocode
 

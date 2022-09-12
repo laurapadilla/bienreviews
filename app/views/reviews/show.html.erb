@@ -30,3 +30,21 @@
   <%= link_to "Edit review", edit_review_path(@review) %>
   <%= link_to "Delete review", review_path(@review), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}  %>
 </section>
+<section class="comments-wrapper">
+  <h2 class="subheading">Comments (<%= @review.comments.count %>) </h2>
+  <div class="comments">
+    <% @review.comments.order("created_at desc").each do |comment| %>
+      <div class="comment">
+        <p>
+          <%= simple_format comment.body%>
+        </p>
+        <p class="posted">Posted <%= time_ago_in_words comment.created_at %> ago</p>
+      </div>
+    <% end %>
+  </div>
+</section>
+<h1>Add a comment</h1>
+<%= simple_form_for [@review, Comment.new] do |f| %>
+  <%= f.input :body %>
+  <%= f.button :submit, "Add comment" %>
+<% end %>

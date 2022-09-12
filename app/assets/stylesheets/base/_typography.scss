@@ -1,6 +1,10 @@
 @import 'abstracts';
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: $titleFont;
   letter-spacing: $letter-spacing-default;
   font-variation-settings: 'wght' 600;
@@ -9,5 +13,8 @@ h1, h2, h3, h4, h5 {
 h1 {
   font-size: $font-size-xl;
   letter-spacing: $letter-spacing-sm;
+}
 
+p {
+  font-family: $bodyFont;
 }

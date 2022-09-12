@@ -24,7 +24,13 @@
 <ul>
   <% @reviews.each do |review| %>
     <li class="review">
-      <%= link_to review.title, review_path(review) %>
+      <%= link_to review_path(review) do %>
+        <h2><%= review.title %></h2>
+        <p class="summary">
+          <%= review.cuisine %> — 
+          <%= pluralize review.comments.count, "comment" %>
+        </p>
+      <% end %>
     </li>
   <%end%>
 </ul>

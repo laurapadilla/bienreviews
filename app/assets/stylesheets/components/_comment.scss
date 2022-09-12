@@ -1,8 +1,8 @@
 @import 'abstracts';
 
 .comments-wrapper {
-  border-bottom: 2px solid $accent;
-  border-top: 2px solid $accent;
+  border-bottom: 2px solid $border-color;
+  border-top: 2px solid $border-color;
   padding: 1rem 0;
   margin: 1rem 0;
 }
@@ -23,7 +23,7 @@
 
     .posted {
       color: $text-color-light;
-      margin-top: 0.75rem;
+      margin-top: 0.5rem;
       font-size: 0.875rem;
     }
   }
